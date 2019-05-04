@@ -1,0 +1,86 @@
+*{ box-sizing: border-box; }
+body{ margin: 0px; padding: 0px; background-image: url("../images/backgroundImage.jpg"); background-attachment: fixed; }
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+[class*='col-'] { float: left; }
+.row:after{ content: ''; clear: both; display: block; }
+.container{ width: 80%; height: auto; margin: auto;}
+
+.header-height { height: 30px;}
+.menu-height { height: 50px;}
+.slider-height { height: 400px;}
+
+.header-height{ background-color: green; }
+.header-ul, .login-ul{ margin: 0px; padding: 0px; list-style: none; }
+.header-ul li { float: left; margin: 6px 20px 6px 10px; color: white; }
+.login-ul{ float: right; }
+.login-ul li { float: left; }
+.login-ul li a{ display: block; text-decoration: none; margin: 6px 10px 6px 0px; color: white; }
+
+.contentColorOne{background-color: whitesmoke;}
+.contentColorTwo{background-color: white;}
+.img-responsive{ width: 100%; height: 100%;}
+.logo{ margin-left: 15px;}
+.title{ text-align: center; letter-spacing: 6px; word-spacing: 10px; text-shadow: 6px 8px 10px gray; padding: 15px 0px 0px 0px;}
+.search-area{ float: left; margin: 20px 0px 20px 0px; width: 100%;}
+.search-input{ width: 50%; margin-left: 21%; height: 50px; transition: 2s; border-radius: 5px; border-color: green; }
+.search-input:focus{ box-shadow: 0px 0px 10px 5px red; }
+.search-btn{ height: 45px; width: 70px; border-radius: 8px; background-color: green; color: white; padding: 5px; text-align: center; }
+
+.main-ul{ margin: 0px; padding: 0px; list-style: none; position: relative; }
+.main-li{ float: left; width: 20%;}
+.main-li a{ border: 1px solid gray; display: block; text-align: center; text-decoration: none; height: 50px; padding: 15px 0px; background-color: limegreen; color: white; font-size: 20px; transform: rotateX(0deg); transition: 2s;}
+.main-li a:hover{ background-color: black; color: green; transform: rotateX(360deg); }
+.sub-li{ display: none; }
+.main-li:hover .sub-li{ display: block; }
+
+@keyframes slider {
+    0% {background-image: url("../images/images (1).jpg")}
+    25% {background-image: url("../images/images (2).jpg")}
+    50% {background-image: url("../images/images (3).jpg")}
+    75% {background-image: url("../images/images(4).jpg")}
+    100% {background-image: url("../images/images(5).jpg")}
+}
+.slider{ width: 100%; height: 100%; animation-name: slider; animation-duration: 6s; animation-iteration-count: infinite; background-size: 100% 100%; }
+.content{ margin-top: 5px; padding: 0px 2px;}
+.content:hover{ box-shadow: 0px 0px 3px 1px lightgray; }
+.content h2{ text-align: center; }
+.content p{ padding: 5px; text-align: justify; line-height: 25px;}
+.content-btn{ width: 100%; height: 100%; background-color: black; color: white; padding: 10px; margin: 0px 0px 5px 0px; text-decoration: none; text-align: center; display: block;}
+
+@media screen and (max-width: 500px) {
+    [class*='col-'] {
+        width: 100%; }
+}
+@media screen and (min-width: 501px) and (max-width: 780px) {
+    .col-m1 { width: 8.33%; }
+    .col-m2 { width: 16.66%; }
+    .col-m3 { width: 25%; }
+    .col-m4 { width: 33.33%; }
+    .col-m5 { width: 41.66%; }
+    .col-m6 { width: 50%; }
+    .col-m7 { width: 58.33%; }
+    .col-m8 { width: 66.66%; }
+    .col-m9 { width: 75%; }
+    .col-m10 { width: 83.33%; }
+    .col-m11 { width: 91.66%; }
+    .col-m12 { width: 100%; }
+}
+
+.contact-form{ padding: 30px 0px 45px 30px;  background-color: whitesmoke; }
+.social-size{ width: 30px; height: 30px; padding: 5px;}
+.img-p{ text-align: center; padding-top: 20px;}
+.footer-header{ text-align: center; letter-spacing: 15px; padding: 15px 0px; border-bottom: 1px solid lightgreen}
+.footer-h3{ text-align: center; }
+.footer-p{ text-align: center; line-height: 30px;}
+.footer-h5{text-align: center; padding: 5px 0px 5px 0px; color: white; background-color: green; display: block; }
